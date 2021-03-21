@@ -3,7 +3,7 @@
 <head>
 	<title>Adrian Koczański</title>
 	<meta charset="UTF-8">
-	
+	<script src="tic2.js"></script>
 	<style>
 		@font-face
 		{
@@ -72,17 +72,39 @@
 			float: bottom;
 		}
 		
-		a
+				a
 		{
 			color: white;
 			font-family: star_jediregular;
 			font-size: 18px;
 		}
+		
+		#ttt-game {
+		  display: grid;
+		  max-width: 600px;
+		  margin: 0 auto;
+		  grid-template-columns: 33% 33% 33%;
+		  grid-gap: 5px;
+		}
+		#ttt-game div {
+		  font-size: 3em;
+		  text-align: center;
+		  background: #eee;
+		  padding: 50px;
+		}
+		#ttt-game div.player {
+		  background: #c2e3ff;
+		}
+		#ttt-game div.computer {
+		  background: #ffebeb;
+		}
+		
 	</style>
 </head>
 <body>
 	<div class = "top">
-		<h1>Gwiazdne Wojny bruum</h1>
+	<h1>Gwiazdne Wojny bruum</h1>
+		
 	</div>
 	<div class = "left">
 		<a href="https://koczan.github.io/">Strona glówna</a><br>
@@ -91,16 +113,11 @@
 		<a href="https://koczan.github.io/tictactoe1.html">tic-tac-toe ai</a>
 	</div>
 	<div class = "right">
-<img alt="General Kenobi jumping like a boss." src = "https://thumbs.gfycat.com/TangibleBareCopperbutterfly-size_restricted.gif"><br>
-		<p>Obi-Wan Kenobi: [jumps down from the upper levels] Hello there.<br>
-			[All droids activate their weapons and surround Obi-Wan.]<br>
-			General Grievous: General Kenobi. You are a bold one. [to the Magna Guards] Kill him!<br>
-			[The Magna guards advance. Obi-wan pulls down a heating vent on top of them.]<br>
-			General Grievous: [to the droids] Back away! I will deal with this Jedi slime myself.<br>
-			Obi-Wan Kenobi: Your move.<br>
-			General Grievous: You fool. I've been trained in your Jedi arts by Count Dooku.<br>
-			[Grievous' two arms split into four. Each activates and wields a stolen lightsaber.]<br>
-			General Grievous: Attack, Kenobi!<br></p>
+		<h2><center>Gre rozpoczyna gracz!</center></h2><br>
+		<div id="ttt-game"></div>
+	</div>
+	
+	
 	</div>
 	<div class = "bottom">
 		<p>Strona wykonana przez Adriana Koczanskiego w ramach zaliczenia...</p>

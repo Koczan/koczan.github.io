@@ -1,0 +1,348 @@
+html
+{
+    height: 100%;
+}
+
+body
+{
+    color: whitesmoke;
+    font: normal .80em 'trebuchet ms', arial, sans-serif;
+    background-image: url("background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+p
+{
+    padding: 0 0 20px 0;
+    line-height: 1.7em;
+    text-align: justify;
+}
+
+img
+{
+    border: 0;
+}
+
+h1
+{
+    font: normal 175% 'century gothic', arial, sans-serif;
+    color: whitesmoke;
+    margin: 0 0 15px 0;
+    padding: 15px 0 5px 0;
+}
+
+h2
+{
+    font: normal 175% 'century gothic', arial, sans-serif;
+    color: whitesmoke;
+    margin: 0 0 15px 0;
+    padding: 15px 0 5px 0;
+}
+
+#main, #logo, #menubar, #zawartosc_strony, #stopka
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header
+{
+    height: 240px;
+}
+
+#logo
+{
+    width: 825px;
+    position: relative;
+    height: 168px;
+}
+
+#logo #logo_text
+{
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+#logo h1, #logo h2
+{
+    font: normal 300% 'century gothic', arial, sans-serif;
+    border-bottom: 0;
+    text-transform: none;
+    margin: 0;
+}
+
+#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover
+{
+    padding: 22px 0 0 0;
+    color: whitesmoke;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+
+#logo_text h1
+{
+    color: whitesmoke;
+}
+
+#logo_text h2
+{
+    font-size: 100%;
+    padding: 4px 0 0 0;
+    color: floralwhite;
+}
+
+#menubar
+{
+    width: 900px;
+    height: 72px;
+    padding: 0;
+    background: transparent url(transparent.png) repeat;
+}
+
+ul#menu, ul#menu li
+{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+ul#menu li
+{
+    list-style: none;
+}
+
+ul#menu li a
+{
+    letter-spacing: 0.1em;
+    font: normal 100% arial, sans-serif;
+    display: block;
+    float: left;
+    height: 37px;
+    padding: 29px 26px 6px 26px;
+    text-align: center;
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+ul#menu li a:hover, ul#menu li.wybrane_menu a, ul#menu li.wybrane_menu a:hover
+{
+    color: #FFF;
+    background: darkred;
+}
+
+#zawartosc_strony
+{
+    color: whitesmoke;
+    width: 837px;
+    overflow: hidden;
+    margin: 0 auto 0 auto;
+    padding: 20px 24px 20px 37px;
+    background: rgba(139,0,0,0.5);
+}
+
+.pasek_boczny
+{
+    float: right;
+    width: 190px;
+    padding: 0 15px 20px 15px;
+}
+
+.pasek_boczny ul
+{
+    width: 178px;
+    padding: 4px 0 0 0;
+    margin: 4px 0 30px 0;
+}
+
+.pasek_boczny li
+{
+    list-style: none;
+    padding: 0 0 7px 0;
+}
+
+.pasek_boczny li a, .pasek_boczny li a:hover
+{
+    padding: 0 0 0 40px;
+    display: block;
+}
+
+.pasek_boczny li a.wybrane_menu
+{
+    color: darkred;
+    text-decoration: none;
+}
+
+#stopka
+{
+    width: 900px;
+    font: normal 100% 'lucida sans unicode', arial, sans-serif;
+    height: 33px;
+    padding: 24px 0 5px 0;
+    text-align: center;
+    background: transparent url(transparent.png) repeat;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+#stopka a
+{
+    color: #FFF;
+    text-decoration: none;
+}
+
+#stopka a:hover
+{
+    color: #FFF;
+    text-decoration: underline;
+}
+
+#zawartosc
+{
+    position: relative;
+    width: 595px;
+    padding: 0;
+}
+
+#zawartosc ul
+{
+    margin: 2px 0 22px 0;
+}
+
+.button
+{
+    font: normal 100% 'lucida sans unicode', arial, sans-serif;
+    background-color: rgba(139,0,0,0.5);
+    border: none;
+    color: whitesmoke;
+    display: grid;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    cursor: pointer;
+}
+
+.button:hover
+{
+    background-color: darkred;
+    color: whitesmoke;
+    border-color: rgba(139,0,0,0.5);
+}
+
+.board
+{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3,auto);
+}
+
+.cell
+{
+    width: 100px;
+    height: 100px;
+    border: 1px solid whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+/* usuniecie krawedzi */
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3)
+{
+    border-top: none;
+}
+
+.cell:nth-child(3n + 1)
+{
+    border-left: none;
+}
+.cell:nth-child(3n + 3)
+{
+    border-right: none;
+}
+.cell:last-child,
+.cell:nth-child(7),
+.cell:nth-child(8)
+{
+    border-bottom: none;
+}
+
+/* zakaz na kursorze */
+.cell.x,
+.cell.circle
+{
+    cursor: not-allowed;
+}
+
+/* rysowanie X */
+.cell.x::before,
+.cell.x::after,
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.x .cell:not(.x):not(.circle):hover::after
+{
+    content: 'X';
+    position: absolute;
+    font-size: 100px;
+}
+
+/* rysowanie O */
+.cell.circle::before,
+.cell.circle::after,
+.board.circle .cell:not(.x):not(.circle):hover::before,
+.board.circle .cell:not(.x):not(.circle):hover::after
+{
+    content: 'O';
+    position: absolute;
+    font-size: 100px;
+}
+
+.winning-message
+{
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, .8);
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 5rem;
+    flex-direction: column;
+}
+
+.restartButton
+{
+    font-size: 3rem;
+    background-color: rgba(139,0,0,0.5);
+    border: 1px solid darkred;
+    padding: .25em .5em;
+    margin-top:5px; ;
+    cursor: pointer;
+    color: whitesmoke;
+}
+.restartButton:hover
+{
+    background-color: darkred;
+    color: whitesmoke;
+    border-color: rgba(139,0,0,0.5);
+}
+.winning-message.show
+{
+    display: flex;
+}

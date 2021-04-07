@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+    <title>Wojciech Chudoba PwI - Kółko i krzyżyk</title>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="" />
+    <meta name="keywords" content="wojtekch10, wojtek chudoba, wojciech chudoba" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+    <script defer src="multiplayer/script.js"></script>
+    <script defer src="multiplayer/minimax.js"></script>
+</head>
+<body>
+<div id="main">
+    <div id="header">
+        <div id="logo">
+            <div id="logo_text">
+                <h1><a href="index.html">Wojciech Chudoba PwI</a></h1>
+                <h2>Kółko i krzyżyk</h2>
+            </div>
+        </div>
+        <div id="menubar">
+            <ul id="menu">
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="loremipsum.html">Lorem Ipsum</a></li>
+                <li class="wybrane_menu"><a href="ttt.html">Kółko i krzyżyk</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="zawartosc_strony">
+        <div class="board" id="board">
+            <div class="cell" id="0,0" data-cell></div>
+            <div class="cell" id="0,1" data-cell></div>
+            <div class="cell" id="0,2" data-cell></div>
+            <div class="cell" id="1,0" data-cell></div>
+            <div class="cell" id="1,1" data-cell></div>
+            <div class="cell" id="1,2" data-cell></div>
+            <div class="cell" id="2,0" data-cell></div>
+            <div class="cell" id="2,1" data-cell></div>
+            <div class="cell" id="2,2" data-cell></div>
+        </div>
+        <div class="winning-message" id="winning-message">
+            <div data-winning-message-text></div>
+            <button class="restartButton" id="restartButton">Rewanż</button>
+            <button class="restartButton" onclick="window.location.href='ttt.html';">Menu główne gry</button>
+        </div>
+    </div>
+    <div id="stopka">
+        Wojciech Chudoba | Programowanie w Internecie SGGW 2021
+    </div>
+</div>
+</body>
+</html>

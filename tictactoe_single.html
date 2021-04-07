@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<title>PWI - AK</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/ttt.css">
+		<script defer src="js/singleplayer/script.js"></script>
+		<script defer src="js/singleplayer/minimax.js"></script>
+	</head>
+	<body>
+		<!-- Nawigacja -->
+		<div class="header">
+			<h1>Adrian Koczański</h1>
+			<p><i>Strona tematyczna poświęcona Star Wars'om</i></p>
+			</div>
+
+			<div class="topnav">
+			  <a href="https://www.koczan.github.io/index.html">Strona Główna</a>
+			  <a href="https://www.koczan.github.io/anakin.html">Anakin</a>
+			  <a href="https://www.koczan.github.io/tictactoe.html">Kółko i Krzyżyk</a>
+			  <a href="https://www.linkedin.com/in/adrian-kocza%C5%84ski-1461971a8/" style="float:right"><img src="https://eaes.eu/wp-content/uploads/2017/05/linkedin-logo.png" height="20px"/> LinkedIn</a>
+			</div>
+
+			<div class="row">
+			  <div class="leftcolumn">
+				<div class="card">
+					<h1>Strategia gry</h1>
+					<h5>Osoba, która rozpoczyna grę, ma przewagę ruchu, więc łatwiej jest jej wygrać. Osoba rozpoczynająca jako druga łatwo może jednak doprowadzić do remisu:</h5>
+
+    <p>- Jeśli przeciwnik umieścił odpowiedni znak w narożniku kwadratu, umieści własny znak w środku kwadratu, a następnie – gdy przeciwnik będzie umieszczać własny znak w którymś z narożników – będzie stawiać swój kolejny znak pomiędzy narożnikami (nie w narożnikach) lub – gdy przeciwnik postawi swój kolejny znak obok wcześniej postawionego – zwyczajnie blokować możliwość postawienia trzeciego znaku w linii</p>
+    <p>- Jeśli przeciwnik umieścił swój znak w środku kwadratu, umieszczać będzie swój znak w narożniku kwadratu, a następnie będzie blokować możliwość uzyskania przez przeciwnika trzech znaków w linii lub – gdy przeciwnik postawi swój kolejny znak w przeciwległym narożniku – umieści swój znak w narożniku, a nie pomiędzy narożnikami</p>
+    <p>- Jeśli przeciwnik umieścił swój znak na boku kwadratu, umieszcza własny znak w środku kwadratu i następnie blokuje możliwość uzyskania przez przeciwnika trzech znaków w linii.</p>
+	
+	<center><h2>Kółko i krzyżyk</h2>
+	<h3># singleplayer #</h3></center><br>
+					<div class="board" id="board">
+						<div class="cell" id="0,0" data-cell></div>
+						<div class="cell" id="0,1" data-cell></div>
+						<div class="cell" id="0,2" data-cell></div>
+						<div class="cell" id="1,0" data-cell></div>
+						<div class="cell" id="1,1" data-cell></div>
+						<div class="cell" id="1,2" data-cell></div>
+						<div class="cell" id="2,0" data-cell></div>
+						<div class="cell" id="2,1" data-cell></div>
+						<div class="cell" id="2,2" data-cell></div>
+					</div>
+					<div class="winning-message" id="winning-message">
+						<div data-winning-message-text></div>
+						<button class="restartButton" id="restartButton">Rewanż</button>
+						<button class="restartButton" onclick="window.location.href='tictactoe.html';">Menu główne gry</button>
+					</div>
+				</div>
+			  </div>
+			
+			
+			<div class="rightcolumn">
+				<div class="card">
+				  <h2>Kółko i krzyżyk</h2>
+				  <div class="portrait">
+					<img src="img/ttt.jpg" />
+			      </div>
+				  
+				  <p>Kółko i krzyżyk – gra strategiczna rozgrywana przez dwóch graczy, najczęściej na kartce papieru w kratkę. Gracze obejmują pola na przemian dążąc do objęcia trzech pól w jednej linii, przy jednoczesnym uniemożliwieniu tego samego przeciwnikowi. Pole może być objęte przez jednego gracza i nie zmienia swego właściciela przez cały przebieg gry. W najbardziej popularnej w Polsce wersji gra odbywa się na polu o wymiarach 3x3. </p>
+				</div>
+			  </div>
+			</div>
+
+			<div class="footer">
+			  <h2>Strona wykonana w ramach zaliczenia PWI, autorstwa Adriana K.</h2>
+			</div>
+	</body>
+</html>

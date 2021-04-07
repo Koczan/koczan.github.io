@@ -112,8 +112,8 @@
 .restartButton
 {
     font-size: 3rem;
-    background-color: rgba(139,0,0,0.5);
-    border: 1px solid darkred;
+    background-color: rgba(255, 178, 0,0.5);
+    border: rgba(255, 178, 0,0.6);
     padding: .25em .5em;
     margin-top:5px; ;
     cursor: pointer;
@@ -121,9 +121,9 @@
 }
 .restartButton:hover
 {
-    background-color: darkred;
+    background-color: rgba(255, 178, 0,0.6);
     color: whitesmoke;
-    border-color: rgba(139,0,0,0.5);
+    border-color: rgba(255, 178, 0,0.7);
 }
 .winning-message.show
 {
